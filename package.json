@@ -1,0 +1,13 @@
+{
+  "name": "tinakamto",
+  "version": "1.0.0",
+  "description": "App for Tina Kamto",
+  "main": "index.html",
+  "scripts": {
+    "start": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
