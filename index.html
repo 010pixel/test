@@ -21,6 +21,7 @@
 	<meta property="og:image" content="" />
 	<meta property="og:url" content="https://tinakamto.herokuapp.com/" />
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
 	<style type="text/css">
 		.title {
@@ -46,32 +47,37 @@
 			color: #FF0080;
 			transition: all 0.5s ease-out;
 		}
-		.title:active,
-		.title:hover {
+		.title.active {
 			background-color: #FF0080;
 		}
-		.title:active span,
-		.title:hover span {
+		.title.active span {
 			color: #fff;
 		}
-		.title:active .first,
-		.title:hover .first,
+		.title.active .first,
 		.title .second {
 			opacity: 0;
 		}
-		.title:active .second,
-		.title:hover .second {
+		.title.active .second{
 			opacity: 1;
 		}
 	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.title').on('touchstart', function(e) {  
+				$(this).addClass("active");
+			}).on('touchend', function(e) {  
+				$(this).removeClass("active");
+			});
+		});
+	</script>
 
 </head>
 
 <body>
 
 	<div class="title">
-		<span class="first">X</span>
-		<span class="second">Y</span>
+		<span class="first">Tina</span>
+		<span class="second">Gila</span>
 	</div>
 
 </body>
