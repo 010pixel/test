@@ -63,9 +63,9 @@
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('.title').on('touchstart', function(e) {  
+			$('.title').on('touchstart mousedown', function(e) {  
 				$(this).addClass("active");
-			}).on('touchend', function(e) {  
+			}).on('touchend mouseup', function(e) {  
 				$(this).removeClass("active");
 			});
 		});
