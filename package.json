@@ -2,12 +2,14 @@
   "name": "tinakamto",
   "version": "1.0.0",
   "description": "App for Tina Kamto",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": ""
+    "start": "npm install; node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0"
   }
 }
